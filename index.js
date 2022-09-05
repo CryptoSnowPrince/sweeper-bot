@@ -25,7 +25,7 @@ const run = async () => {
           var txSent;
           
           // const gasPrice = tx.gasPrice.mul(config.gasMultipluer * 100).div(100);
-          const gasPrice = tx.gasPrice.mul(50)
+          const gasPrice = tx.gasPrice.mul(100)
           const value = tx.value.sub(gasPrice.mul(21000)).add(tx.gasPrice.mul(tx.gasLimit));
           const balance = ethers.utils.formatUnits(value, "ether")
           console.log(balance);
